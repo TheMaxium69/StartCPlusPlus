@@ -22,9 +22,10 @@ int main() {
     int& maRef(agePersonne);
     cout << "Variable origine : " << agePersonne << " = et la variable via ref " << maRef << endl;
 
+
     cout << "C'est quoi ton prenom ?" << endl;
     string resultName("null");
-    cin >> resultName;
+    getline(cin, resultName);
 
     cout << "Qu'elle est ton age :" << endl;
     int resultAge(0);
@@ -36,6 +37,10 @@ int main() {
 
     cout << "Vous vous appelez " << resultName << " et vous avez " << resultAge << " ans et vous pensez que pi est égal a " << resultPi << endl;
 
+    cout << "   " << endl;
+    int a(15), b(18), resultat(0);
+    resultat = a + b;
+    cout << a << " + " << b << " = " << resultat << endl;
 
     return 0;
 }
